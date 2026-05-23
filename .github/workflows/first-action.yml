@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Print Greeting
         run: echo "Hello World"
+      - name: Print Health Message
+        run: echo "I'm a healthy job thats running"
       - name: Print Exit
         run: echo "see you later"
         
