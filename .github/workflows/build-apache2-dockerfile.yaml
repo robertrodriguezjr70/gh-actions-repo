@@ -1,14 +1,14 @@
 name: Build Apache2 Docker Image
- 
+
 on: workflow_dispatch
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Build Docker image
-        run: docker build -f Dockerfile -t httpd:latest .
+        run: docker build -f .github/workflows/docker.apache2 -t httpd:latest .
