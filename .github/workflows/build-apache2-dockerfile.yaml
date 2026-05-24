@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -f .github/workflows/docker.apache2 -t httpd:latest .
+        run: docker build -f .github/workflows/dockerfile.apache2 -t httpd:latest .
