@@ -1,0 +1,16 @@
+# ──────────────────────────────────────────────
+# Service: whoami
+# Reverse-engineered from: traefik/whoami
+# ──────────────────────────────────────────────
+# traefik/whoami is a tiny Go HTTP server that returns
+# request info (headers, IP, hostname, etc.)
+# Source: https://github.com/traefik/whoami
+ 
+FROM traefik/whoami:latest
+ 
+# Listens on port 80 by default
+# Override port with: CMD ["--port", "8080"]
+ 
+EXPOSE 80
+ 
+CMD ["/whoami"]
